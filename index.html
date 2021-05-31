@@ -1,0 +1,715 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script type="module" src="./index.js" defer></script>
+    <script type="module" src="./domElements.js" defer></script>
+    <!-- <script type="module" src="./functions.js"></script> -->
+    <title>BuyCoins Challenge</title>
+</head>
+<body> 
+    <div id="main-container">
+        <nav id="nav-block">
+            <header id="header">
+                <div class="burger">
+                    <div class="nested-burger"></div>
+                    <div class="nested-burger"></div>
+                    <div class="nested-burger"></div>
+                </div>        
+                <img src="./images/mark-github-16 (1).svg" class="header-div" id="header-div-1"></img>
+                <div class="header-div" id="header-div-2"> 
+                    
+                        
+                        <div id="search-user-div"><input id="search-user" type="text" placeholder="Search.."></div>                     
+                        
+                    <div id="top-nav-div">
+                        <a href="">Pull requests</a>
+                        <a href="">Issues</a>
+                        <a href="">Marketplace</a>
+                        <a href="">Explore</a> 
+                    </div>             
+                    </div>
+                    <img src="./images/bell-16 (1).svg" class="header-div" id="header-div-3"></img>
+                    
+                    <img  src="./images/plus-16 (1).svg" class="header-div" id="header-div-4"></img>
+                    <img class="header-div" id="header-div-5"></img>
+                </header>
+            </nav>
+            
+            
+            <section id="repo-nav-left" class="no-display">
+                <div class="nested-repo-nav-left vanish" id="nested-repo-nav-left-1">
+                    <img id="repo-nav-left-image" src="" alt="">
+                </div>
+                <div class="nested-repo-nav-left vanish" id="nested-repo-nav-left-2">
+                    <div><strong id="nested-div-repo-nav-left-1"></strong></div>
+                    <div id="nested-div-repo-nav-left-2"><button>Follow</button></div>
+                </div>
+            </section>
+            <section id="repo-nav">
+                <div id="repo-nav-div-1" class="repo-nav-div">
+                    <img src="./images/book-24.svg" alt="">
+                    <a href="#"> Overview</a>
+                </div>
+                <div id="repo-nav-div-2" class="repo-nav-div">
+                    <img src="./images/repo-16.svg" alt="">
+                    <a href="#">Repositories</a>
+                </div>
+                <div id="repo-nav-div-3" class="repo-nav-div">
+                    <img src="./images/project-24.svg" alt="">
+                    <a href="#">Projects</a>
+                </div>
+                <div id="repo-nav-div-4" class="repo-nav-div">
+                    <img src="./images/package-24.svg" alt="">
+                    <a href="#">Packages</a>
+                </div>
+            </section>
+            <section id="hidden"></section>
+            <section id="repo-search-div">
+                <section id="nested-repo-search-div">
+                    <input id="repo-search" type="text" placeholder="Search..">                </section>
+            </section>
+            <section id="repo-count-display"> 
+                <section id="nested-repo-count-display-div"> </section>
+            </section>
+            <section id="body-block-right">
+                <div class="error-message no-display"  id="error-div">
+                    Something went wrong. Try again
+                </div>
+                <section class="nested-body-block-right no-display ">
+                    <div class="repo-description-div-1" id="repo-description-div-1">
+                        <a href="#" class="repo-name"></a href="#">
+                        <div class="repo-description-div-3">
+                            <div class="nested-repo-description" id="nested-repo-description-1">
+                                <div class="repo-language-colour" id="repo-language-colour"></div>
+                                <div class="repo-language" id="repo-language"></div>
+                            </div>
+                                <div class="nested-repo-description" id="nested-repo-description-2">
+                                <img src="./images/star-16.svg" class="repo-star" id="repo-star"></img>
+                                <div class="repo-stars" id="repo-stars"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-3">
+                                <img src="./images/repo-forked-16.svg" class="repo-fork" id="repo-fork"></img>
+                                <div class="repo-forks" id="repo-forks"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-4">
+                                <div class="repo-update" id="repo-update"></div>
+                                </div>                  
+                        </div>
+                    </div>
+                    <div class="repo-description-div-2" id="repo-description-div-2">
+                        <div class="nested-repo-description-div-2">
+                            <img src="./images/star-24.svg" alt="">
+                            <button> Star</button> 
+                        </div>                    
+                    </div>
+                </section>               
+                <section class="nested-body-block-right no-display">
+                    <div class="repo-description-div-1" id="repo-description-div-1">
+                        <a href="#" class="repo-name"></a href="#">
+                        <div class="repo-description-div-3">
+                            <div class="nested-repo-description" id="nested-repo-description-1">
+                                <div class="repo-language-colour" id="repo-language-colour"></div>
+                                <div class="repo-language" id="repo-language"></div>
+                            </div>
+                                <div class="nested-repo-description" id="nested-repo-description-2">
+                                <img src="./images/star-16.svg" class="repo-star" id="repo-star"></img>
+                                <div class="repo-stars" id="repo-stars"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-3">
+                                <img src="./images/repo-forked-16.svg" class="repo-fork" id="repo-fork"></img>
+                                <div class="repo-forks" id="repo-forks"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-4">
+                                <div class="repo-update" id="repo-update"></div>
+                                </div>                  
+                        </div>
+                    </div>
+                    <div class="repo-description-div-2" id="repo-description-div-2">
+                        <div class="nested-repo-description-div-2">
+                            <img src="./images/star-24.svg" alt="">
+                            <button> Star</button> 
+                        </div>                    
+                    </div>
+                </section>               
+                <section class="nested-body-block-right no-display ">
+                    <div class="repo-description-div-1" id="repo-description-div-1">
+                        <a href="#" class="repo-name"></a href="#">
+                        <div class="repo-description-div-3">
+                            <div class="nested-repo-description" id="nested-repo-description-1">
+                                <div class="repo-language-colour" id="repo-language-colour"></div>
+                                <div class="repo-language" id="repo-language"></div>
+                            </div>
+                                <div class="nested-repo-description" id="nested-repo-description-2">
+                                <img src="./images/star-16.svg" class="repo-star" id="repo-star"></img>
+                                <div class="repo-stars" id="repo-stars"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-3">
+                                <img src="./images/repo-forked-16.svg" class="repo-fork" id="repo-fork"></img>
+                                <div class="repo-forks" id="repo-forks"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-4">
+                                <div class="repo-update" id="repo-update"></div>
+                                </div>                  
+                        </div>
+                    </div>
+                    <div class="repo-description-div-2" id="repo-description-div-2">
+                        <div class="nested-repo-description-div-2">
+                            <img src="./images/star-24.svg" alt="">
+                            <button> Star</button> 
+                        </div>                    
+                    </div>
+                </section>               
+                <section class="nested-body-block-right no-display ">
+                    <div class="repo-description-div-1" id="repo-description-div-1">
+                        <a href="#" class="repo-name"></a href="#">
+                        <div class="repo-description-div-3">
+                            <div class="nested-repo-description" id="nested-repo-description-1">
+                                <div class="repo-language-colour" id="repo-language-colour"></div>
+                                <div class="repo-language" id="repo-language"></div>
+                            </div>
+                                <div class="nested-repo-description" id="nested-repo-description-2">
+                                <img src="./images/star-16.svg" class="repo-star" id="repo-star"></img>
+                                <div class="repo-stars" id="repo-stars"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-3">
+                                <img src="./images/repo-forked-16.svg" class="repo-fork" id="repo-fork"></img>
+                                <div class="repo-forks" id="repo-forks"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-4">
+                                <div class="repo-update" id="repo-update"></div>
+                                </div>                  
+                        </div>
+                    </div>
+                    <div class="repo-description-div-2" id="repo-description-div-2">
+                        <div class="nested-repo-description-div-2">
+                            <img src="./images/star-24.svg" alt="">
+                            <button> Star</button> 
+                        </div>                    
+                    </div>
+                </section>               
+                <section class="nested-body-block-right no-display ">
+                    <div class="repo-description-div-1" id="repo-description-div-1">
+                        <a href="#" class="repo-name"></a href="#">
+                        <div class="repo-description-div-3">
+                            <div class="nested-repo-description" id="nested-repo-description-1">
+                                <div class="repo-language-colour" id="repo-language-colour"></div>
+                                <div class="repo-language" id="repo-language"></div>
+                            </div>
+                                <div class="nested-repo-description" id="nested-repo-description-2">
+                                <img src="./images/star-16.svg" class="repo-star" id="repo-star"></img>
+                                <div class="repo-stars" id="repo-stars"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-3">
+                                <img src="./images/repo-forked-16.svg" class="repo-fork" id="repo-fork"></img>
+                                <div class="repo-forks" id="repo-forks"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-4">
+                                <div class="repo-update" id="repo-update"></div>
+                                </div>                  
+                        </div>
+                    </div>
+                    <div class="repo-description-div-2" id="repo-description-div-2">
+                        <div class="nested-repo-description-div-2">
+                            <img src="./images/star-24.svg" alt="">
+                            <button> Star</button> 
+                        </div>                    
+                    </div>
+                </section>               
+                <section class="nested-body-block-right no-display ">
+                    <div class="repo-description-div-1" id="repo-description-div-1">
+                        <a href="#" class="repo-name"></a href="#">
+                        <div class="repo-description-div-3">
+                            <div class="nested-repo-description" id="nested-repo-description-1">
+                                <div class="repo-language-colour" id="repo-language-colour"></div>
+                                <div class="repo-language" id="repo-language"></div>
+                            </div>
+                                <div class="nested-repo-description" id="nested-repo-description-2">
+                                <img src="./images/star-16.svg" class="repo-star" id="repo-star"></img>
+                                <div class="repo-stars" id="repo-stars"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-3">
+                                <img src="./images/repo-forked-16.svg" class="repo-fork" id="repo-fork"></img>
+                                <div class="repo-forks" id="repo-forks"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-4">
+                                <div class="repo-update" id="repo-update"></div>
+                                </div>                  
+                        </div>
+                    </div>
+                    <div class="repo-description-div-2" id="repo-description-div-2">
+                        <div class="nested-repo-description-div-2">
+                            <img src="./images/star-24.svg" alt="">
+                            <button> Star</button> 
+                        </div>                    
+                    </div>
+                </section>               
+                <section class="nested-body-block-right no-display ">
+                    <div class="repo-description-div-1" id="repo-description-div-1">
+                        <a href="#" class="repo-name"></a href="#">
+                        <div class="repo-description-div-3">
+                            <div class="nested-repo-description" id="nested-repo-description-1">
+                                <div class="repo-language-colour" id="repo-language-colour"></div>
+                                <div class="repo-language" id="repo-language"></div>
+                            </div>
+                                <div class="nested-repo-description" id="nested-repo-description-2">
+                                <img src="./images/star-16.svg" class="repo-star" id="repo-star"></img>
+                                <div class="repo-stars" id="repo-stars"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-3">
+                                <img src="./images/repo-forked-16.svg" class="repo-fork" id="repo-fork"></img>
+                                <div class="repo-forks" id="repo-forks"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-4">
+                                <div class="repo-update" id="repo-update"></div>
+                                </div>                  
+                        </div>
+                    </div>
+                    <div class="repo-description-div-2" id="repo-description-div-2">
+                        <div class="nested-repo-description-div-2">
+                            <img src="./images/star-24.svg" alt="">
+                            <button> Star</button> 
+                        </div>                    
+                    </div>
+                </section>               
+                <section class="nested-body-block-right no-display ">
+                    <div class="repo-description-div-1" id="repo-description-div-1">
+                        <a href="#" class="repo-name"></a href="#">
+                        <div class="repo-description-div-3">
+                            <div class="nested-repo-description" id="nested-repo-description-1">
+                                <div class="repo-language-colour" id="repo-language-colour"></div>
+                                <div class="repo-language" id="repo-language"></div>
+                            </div>
+                                <div class="nested-repo-description" id="nested-repo-description-2">
+                                <img src="./images/star-16.svg" class="repo-star" id="repo-star"></img>
+                                <div class="repo-stars" id="repo-stars"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-3">
+                                <img src="./images/repo-forked-16.svg" class="repo-fork" id="repo-fork"></img>
+                                <div class="repo-forks" id="repo-forks"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-4">
+                                <div class="repo-update" id="repo-update"></div>
+                                </div>                  
+                        </div>
+                    </div>
+                    <div class="repo-description-div-2" id="repo-description-div-2">
+                        <div class="nested-repo-description-div-2">
+                            <img src="./images/star-24.svg" alt="">
+                            <button> Star</button> 
+                        </div>                    
+                    </div>
+                </section>               
+                <section class="nested-body-block-right no-display ">
+                    <div class="repo-description-div-1" id="repo-description-div-1">
+                        <a href="#" class="repo-name"></a href="#">
+                        <div class="repo-description-div-3">
+                            <div class="nested-repo-description" id="nested-repo-description-1">
+                                <div class="repo-language-colour" id="repo-language-colour"></div>
+                                <div class="repo-language" id="repo-language"></div>
+                            </div>
+                                <div class="nested-repo-description" id="nested-repo-description-2">
+                                <img src="./images/star-16.svg" class="repo-star" id="repo-star"></img>
+                                <div class="repo-stars" id="repo-stars"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-3">
+                                <img src="./images/repo-forked-16.svg" class="repo-fork" id="repo-fork"></img>
+                                <div class="repo-forks" id="repo-forks"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-4">
+                                <div class="repo-update" id="repo-update"></div>
+                                </div>                  
+                        </div>
+                    </div>
+                    <div class="repo-description-div-2" id="repo-description-div-2">
+                        <div class="nested-repo-description-div-2">
+                            <img src="./images/star-24.svg" alt="">
+                            <button> Star</button> 
+                        </div>                    
+                    </div>
+                </section>               
+                <section class="nested-body-block-right no-display ">
+                    <div class="repo-description-div-1" id="repo-description-div-1">
+                        <a href="#" class="repo-name"></a href="#">
+                        <div class="repo-description-div-3">
+                            <div class="nested-repo-description" id="nested-repo-description-1">
+                                <div class="repo-language-colour" id="repo-language-colour"></div>
+                                <div class="repo-language" id="repo-language"></div>
+                            </div>
+                                <div class="nested-repo-description" id="nested-repo-description-2">
+                                <img src="./images/star-16.svg" class="repo-star" id="repo-star"></img>
+                                <div class="repo-stars" id="repo-stars"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-3">
+                                <img src="./images/repo-forked-16.svg" class="repo-fork" id="repo-fork"></img>
+                                <div class="repo-forks" id="repo-forks"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-4">
+                                <div class="repo-update" id="repo-update"></div>
+                                </div>                  
+                        </div>
+                    </div>
+                    <div class="repo-description-div-2" id="repo-description-div-2">
+                        <div class="nested-repo-description-div-2">
+                            <img src="./images/star-24.svg" alt="">
+                            <button> Star</button> 
+                        </div>                    
+                    </div>
+                </section>               
+                <section class="nested-body-block-right no-display ">
+                    <div class="repo-description-div-1" id="repo-description-div-1">
+                        <a href="#" class="repo-name"></a href="#">
+                        <div class="repo-description-div-3">
+                            <div class="nested-repo-description" id="nested-repo-description-1">
+                                <div class="repo-language-colour" id="repo-language-colour"></div>
+                                <div class="repo-language" id="repo-language"></div>
+                            </div>
+                                <div class="nested-repo-description" id="nested-repo-description-2">
+                                <img src="./images/star-16.svg" class="repo-star" id="repo-star"></img>
+                                <div class="repo-stars" id="repo-stars"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-3">
+                                <img src="./images/repo-forked-16.svg" class="repo-fork" id="repo-fork"></img>
+                                <div class="repo-forks" id="repo-forks"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-4">
+                                <div class="repo-update" id="repo-update"></div>
+                                </div>                  
+                        </div>
+                    </div>
+                    <div class="repo-description-div-2" id="repo-description-div-2">
+                        <div class="nested-repo-description-div-2">
+                            <img src="./images/star-24.svg" alt="">
+                            <button> Star</button> 
+                        </div>                    
+                    </div>
+                </section>               
+                <section class="nested-body-block-right no-display ">
+                    <div class="repo-description-div-1" id="repo-description-div-1">
+                        <a href="#" class="repo-name"></a href="#">
+                        <div class="repo-description-div-3">
+                            <div class="nested-repo-description" id="nested-repo-description-1">
+                                <div class="repo-language-colour" id="repo-language-colour"></div>
+                                <div class="repo-language" id="repo-language"></div>
+                            </div>
+                                <div class="nested-repo-description" id="nested-repo-description-2">
+                                <img src="./images/star-16.svg" class="repo-star" id="repo-star"></img>
+                                <div class="repo-stars" id="repo-stars"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-3">
+                                <img src="./images/repo-forked-16.svg" class="repo-fork" id="repo-fork"></img>
+                                <div class="repo-forks" id="repo-forks"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-4">
+                                <div class="repo-update" id="repo-update"></div>
+                                </div>                  
+                        </div>
+                    </div>
+                    <div class="repo-description-div-2" id="repo-description-div-2">
+                        <div class="nested-repo-description-div-2">
+                            <img src="./images/star-24.svg" alt="">
+                            <button> Star</button> 
+                        </div>                    
+                    </div>
+                </section>               
+                <section class="nested-body-block-right no-display ">
+                    <div class="repo-description-div-1" id="repo-description-div-1">
+                        <a href="#" class="repo-name"></a href="#">
+                        <div class="repo-description-div-3">
+                            <div class="nested-repo-description" id="nested-repo-description-1">
+                                <div class="repo-language-colour" id="repo-language-colour"></div>
+                                <div class="repo-language" id="repo-language"></div>
+                            </div>
+                                <div class="nested-repo-description" id="nested-repo-description-2">
+                                <img src="./images/star-16.svg" class="repo-star" id="repo-star"></img>
+                                <div class="repo-stars" id="repo-stars"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-3">
+                                <img src="./images/repo-forked-16.svg" class="repo-fork" id="repo-fork"></img>
+                                <div class="repo-forks" id="repo-forks"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-4">
+                                <div class="repo-update" id="repo-update"></div>
+                                </div>                  
+                        </div>
+                    </div>
+                    <div class="repo-description-div-2" id="repo-description-div-2">
+                        <div class="nested-repo-description-div-2">
+                            <img src="./images/star-24.svg" alt="">
+                            <button> Star</button> 
+                        </div>                    
+                    </div>
+                </section>               
+                <section class="nested-body-block-right no-display ">
+                    <div class="repo-description-div-1" id="repo-description-div-1">
+                        <a href="#" class="repo-name"></a href="#">
+                        <div class="repo-description-div-3">
+                            <div class="nested-repo-description" id="nested-repo-description-1">
+                                <div class="repo-language-colour" id="repo-language-colour"></div>
+                                <div class="repo-language" id="repo-language"></div>
+                            </div>
+                                <div class="nested-repo-description" id="nested-repo-description-2">
+                                <img src="./images/star-16.svg" class="repo-star" id="repo-star"></img>
+                                <div class="repo-stars" id="repo-stars"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-3">
+                                <img src="./images/repo-forked-16.svg" class="repo-fork" id="repo-fork"></img>
+                                <div class="repo-forks" id="repo-forks"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-4">
+                                <div class="repo-update" id="repo-update"></div>
+                                </div>                  
+                        </div>
+                    </div>
+                    <div class="repo-description-div-2" id="repo-description-div-2">
+                        <div class="nested-repo-description-div-2">
+                            <img src="./images/star-24.svg" alt="">
+                            <button> Star</button> 
+                        </div>                    
+                    </div>
+                </section>               
+                <section class="nested-body-block-right no-display ">
+                    <div class="repo-description-div-1" id="repo-description-div-1">
+                        <a href="#" class="repo-name"></a href="#">
+                        <div class="repo-description-div-3">
+                            <div class="nested-repo-description" id="nested-repo-description-1">
+                                <div class="repo-language-colour" id="repo-language-colour"></div>
+                                <div class="repo-language" id="repo-language"></div>
+                            </div>
+                                <div class="nested-repo-description" id="nested-repo-description-2">
+                                <img src="./images/star-16.svg" class="repo-star" id="repo-star"></img>
+                                <div class="repo-stars" id="repo-stars"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-3">
+                                <img src="./images/repo-forked-16.svg" class="repo-fork" id="repo-fork"></img>
+                                <div class="repo-forks" id="repo-forks"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-4">
+                                <div class="repo-update" id="repo-update"></div>
+                                </div>                  
+                        </div>
+                    </div>
+                    <div class="repo-description-div-2" id="repo-description-div-2">
+                        <div class="nested-repo-description-div-2">
+                            <img src="./images/star-24.svg" alt="">
+                            <button> Star</button> 
+                        </div>                    
+                    </div>
+                </section>               
+                <section class="nested-body-block-right no-display ">
+                    <div class="repo-description-div-1" id="repo-description-div-1">
+                        <a href="#" class="repo-name"></a href="#">
+                        <div class="repo-description-div-3">
+                            <div class="nested-repo-description" id="nested-repo-description-1">
+                                <div class="repo-language-colour" id="repo-language-colour"></div>
+                                <div class="repo-language" id="repo-language"></div>
+                            </div>
+                                <div class="nested-repo-description" id="nested-repo-description-2">
+                                <img src="./images/star-16.svg" class="repo-star" id="repo-star"></img>
+                                <div class="repo-stars" id="repo-stars"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-3">
+                                <img src="./images/repo-forked-16.svg" class="repo-fork" id="repo-fork"></img>
+                                <div class="repo-forks" id="repo-forks"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-4">
+                                <div class="repo-update" id="repo-update"></div>
+                                </div>                  
+                        </div>
+                    </div>
+                    <div class="repo-description-div-2" id="repo-description-div-2">
+                        <div class="nested-repo-description-div-2">
+                            <img src="./images/star-24.svg" alt="">
+                            <button> Star</button> 
+                        </div>                    
+                    </div>
+                </section>               
+                <section class="nested-body-block-right no-display ">
+                    <div class="repo-description-div-1" id="repo-description-div-1">
+                        <a href="#" class="repo-name"></a href="#">
+                        <div class="repo-description-div-3">
+                            <div class="nested-repo-description" id="nested-repo-description-1">
+                                <div class="repo-language-colour" id="repo-language-colour"></div>
+                                <div class="repo-language" id="repo-language"></div>
+                            </div>
+                                <div class="nested-repo-description" id="nested-repo-description-2">
+                                <img src="./images/star-16.svg" class="repo-star" id="repo-star"></img>
+                                <div class="repo-stars" id="repo-stars"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-3">
+                                <img src="./images/repo-forked-16.svg" class="repo-fork" id="repo-fork"></img>
+                                <div class="repo-forks" id="repo-forks"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-4">
+                                <div class="repo-update" id="repo-update"></div>
+                                </div>                  
+                        </div>
+                    </div>
+                    <div class="repo-description-div-2" id="repo-description-div-2">
+                        <div class="nested-repo-description-div-2">
+                            <img src="./images/star-24.svg" alt="">
+                            <button> Star</button> 
+                        </div>                    
+                    </div>
+                </section>               
+                <section class="nested-body-block-right no-display ">
+                    <div class="repo-description-div-1" id="repo-description-div-1">
+                        <a href="#" class="repo-name"></a href="#">
+                        <div class="repo-description-div-3">
+                            <div class="nested-repo-description" id="nested-repo-description-1">
+                                <div class="repo-language-colour" id="repo-language-colour"></div>
+                                <div class="repo-language" id="repo-language"></div>
+                            </div>
+                                <div class="nested-repo-description" id="nested-repo-description-2">
+                                <img src="./images/star-16.svg" class="repo-star" id="repo-star"></img>
+                                <div class="repo-stars" id="repo-stars"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-3">
+                                <img src="./images/repo-forked-16.svg" class="repo-fork" id="repo-fork"></img>
+                                <div class="repo-forks" id="repo-forks"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-4">
+                                <div class="repo-update" id="repo-update"></div>
+                                </div>                  
+                        </div>
+                    </div>
+                    <div class="repo-description-div-2" id="repo-description-div-2">
+                        <div class="nested-repo-description-div-2">
+                            <img src="./images/star-24.svg" alt="">
+                            <button> Star</button> 
+                        </div>                    
+                    </div>
+                </section>               
+                <section class="nested-body-block-right no-display ">
+                    <div class="repo-description-div-1" id="repo-description-div-1">
+                        <a href="#" class="repo-name"></a href="#">
+                        <div class="repo-description-div-3">
+                            <div class="nested-repo-description" id="nested-repo-description-1">
+                                <div class="repo-language-colour" id="repo-language-colour"></div>
+                                <div class="repo-language" id="repo-language"></div>
+                            </div>
+                                <div class="nested-repo-description" id="nested-repo-description-2">
+                                <img src="./images/star-16.svg" class="repo-star" id="repo-star"></img>
+                                <div class="repo-stars" id="repo-stars"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-3">
+                                <img src="./images/repo-forked-16.svg" class="repo-fork" id="repo-fork"></img>
+                                <div class="repo-forks" id="repo-forks"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-4">
+                                <div class="repo-update" id="repo-update"></div>
+                                </div>                  
+                        </div>
+                    </div>
+                    <div class="repo-description-div-2" id="repo-description-div-2">
+                        <div class="nested-repo-description-div-2">
+                            <img src="./images/star-24.svg" alt="">
+                            <button> Star</button> 
+                        </div>                    
+                    </div>
+                </section>               
+                <section class="nested-body-block-right no-display ">
+                    <div class="repo-description-div-1" id="repo-description-div-1">
+                        <a href="#" class="repo-name"></a href="#">
+                        <div class="repo-description-div-3">
+                            <div class="nested-repo-description" id="nested-repo-description-1">
+                                <div class="repo-language-colour" id="repo-language-colour"></div>
+                                <div class="repo-language" id="repo-language"></div>
+                            </div>
+                                <div class="nested-repo-description" id="nested-repo-description-2">
+                                <img src="./images/star-16.svg" class="repo-star" id="repo-star"></img>
+                                <div class="repo-stars" id="repo-stars"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-3">
+                                <img src="./images/repo-forked-16.svg" class="repo-fork" id="repo-fork"></img>
+                                <div class="repo-forks" id="repo-forks"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-4">
+                                <div class="repo-update" id="repo-update"></div>
+                                </div>                  
+                        </div>
+                    </div>
+                    <div class="repo-description-div-2" id="repo-description-div-2">
+                        <div class="nested-repo-description-div-2">
+                            <img src="./images/star-24.svg" alt="">
+                            <button> Star</button> 
+                        </div>                    
+                    </div>
+                </section>               
+                <section class="nested-body-block-right no-display ">
+                    <div class="repo-description-div-1" id="repo-description-div-1">
+                        <a href="#" class="repo-name"></a href="#">
+                        <div class="repo-description-div-3">
+                            <div class="nested-repo-description" id="nested-repo-description-1">
+                                <div class="repo-language-colour" id="repo-language-colour"></div>
+                                <div class="repo-language" id="repo-language"></div>
+                            </div>
+                                <div class="nested-repo-description" id="nested-repo-description-2">
+                                <img src="./images/star-16.svg" class="repo-star" id="repo-star"></img>
+                                <div class="repo-stars" id="repo-stars"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-3">
+                                <img src="./images/repo-forked-16.svg" class="repo-fork" id="repo-fork"></img>
+                                <div class="repo-forks" id="repo-forks"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-4">
+                                <div class="repo-update" id="repo-update"></div>
+                                </div>                  
+                        </div>
+                    </div>
+                    <div class="repo-description-div-2" id="repo-description-div-2">
+                        <div class="nested-repo-description-div-2">
+                            <img src="./images/star-24.svg" alt="">
+                            <button> Star</button> 
+                        </div>                    
+                    </div>
+                </section>               
+                <section class="nested-body-block-right no-display ">
+                    <div class="repo-description-div-1" id="repo-description-div-1">
+                        <a href="#" class="repo-name"></a href="#">
+                        <div class="repo-description-div-3">
+                            <div class="nested-repo-description" id="nested-repo-description-1">
+                                <div class="repo-language-colour" id="repo-language-colour"></div>
+                                <div class="repo-language" id="repo-language"></div>
+                            </div>
+                                <div class="nested-repo-description" id="nested-repo-description-2">
+                                <img src="./images/star-16.svg" class="repo-star" id="repo-star"></img>
+                                <div class="repo-stars" id="repo-stars"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-3">
+                                <img src="./images/repo-forked-16.svg" class="repo-fork" id="repo-fork"></img>
+                                <div class="repo-forks" id="repo-forks"></div>
+                                </div>
+                                <div class="nested-repo-description" id="nested-repo-description-4">
+                                <div class="repo-update" id="repo-update"></div>
+                                </div>                  
+                        </div>
+                    </div>
+                    <div class="repo-description-div-2" id="repo-description-div-2">
+                        <div class="nested-repo-description-div-2">
+                            <img src="./images/star-24.svg" alt="">
+                            <button> Star</button> 
+                        </div>                    
+                    </div>
+                </section>               
+                     
+                            
+                              
+            </section>
+            <section id="body-block-left">
+                <div id="avatar">
+                    <img  class="nested-body-block-left-div" id="user-avatar"></img>
+                </div>
+                <h3  class="nested-body-block-left-div" id="user-name"></h3>                    
+                <div class="nested-body-block-left-div" id="user-login"></div>
+                <div class="nested-body-block-left-div" id="user-bio"></div>
+            </section>
+        </div>   
+        
+    </body>
+    </html>
+
+    
+   

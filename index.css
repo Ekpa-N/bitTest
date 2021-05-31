@@ -1,0 +1,720 @@
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+    }
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+}
+
+#main-container {    
+    display: flex;
+    flex-direction: column;
+    height: 2300px;
+    width: 99.88879776%;
+}
+
+#nav-block {
+    width: 100%;
+    background-color: #24292e;
+    height: 62.98px;
+}
+
+header {
+    height: 100%;
+    width: inherit;
+    display: flex;
+    background-color: #24292e;
+    justify-content: center;
+    align-items: center;
+}
+
+#top-nav-div {
+    
+    transition: margin-left 0.4s ease-in-out;
+}
+.header-div {
+    height: 50%; 
+}
+
+#header-div-1 {
+    width:32px;
+    height:38px;
+}
+#header-div-2 {
+    align-items: center;
+    display: flex;
+    width: 80%;
+    margin-left:15px;    
+}
+
+
+#search-user {
+    padding: 0;
+    width: 270px;
+    height: 100%;
+    border-radius: 8px;
+    background-color: #24292e;
+    outline-style: hidden;
+    border: 0;  
+    transition: width 0.4s ease-in-out; 
+}
+
+#search-user-div {
+    padding: 0;
+    width: 271.95px;
+    height: 100%;
+    background-color: #24292e;
+    border-radius: 6px;
+    border: 1px solid white;
+    transition: width 0.4s ease-in-out;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#search-user:focus{
+    outline: none;    
+}
+
+.expands{
+    margin-left: 300px;
+}
+#header-div-2 a {
+    margin-left: 17px;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+}
+#header-div-3 {
+    width: 16.16px;    
+    margin-left:1.2%;    
+}
+#header-div-4 {
+    width: 17.5px;
+    margin-left:1.2%;    
+}
+#header-div-5 {
+    width: 17.5px;
+    height: 17.5px;
+    margin-left:1.2%;
+    border-radius: 50px;    
+}
+
+#repo-nav {
+    position: sticky;
+    top: -30px;
+    display: flex;
+    background-color: white;
+    width: 72%;
+    height: 77.98px;
+    margin-left: 28%;
+    align-items: flex-end;
+    z-index: 2;
+}
+
+#repo-nav-left {
+    display: none;    
+    position: sticky;
+    top:0px;
+    height: 55px;
+    width:28%;
+    background-color: white;
+    border-bottom: 1px solid #f5f5f5;
+    z-index: 2;
+    transition: height 2s ease-in-out;
+}
+
+.nested-repo-nav-left {
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 100px;
+    margin-left: 12%;
+    
+}
+
+.nested-repo-nav-left strong {    
+    color: #24292e;
+    margin-top: 15%;    
+    font-weight: 600;
+    
+}
+
+#nested-repo-nav-left-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 54px;
+    
+}
+
+#repo-nav-left-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#nested-repo-nav-left-2 {
+    display: flex;
+    flex-direction: column;
+    width: 54px;
+    height: 53.5px;
+    justify-content: space-between;
+    margin-left: 5px;
+    
+    
+}
+
+#nested-repo-nav-left-2 div {
+    display: flex;
+    height: 47%;
+    /* border: 1px solid black; */
+    justify-content: center;
+}
+
+/* #nested-div-repo-nav-left-1 {
+    display: flex;
+    align-items: flex-end;
+} */
+
+#nested-div-repo-nav-left-2 {
+    border-radius: 5px;
+    border: 1px solid #24292e;
+    
+}
+
+#nested-repo-nav-left-2 button {
+    border: none;
+    /* background-color: white; */
+    color: #24292e;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.vanish {
+    animation-name: vanish;
+    animation-duration: 1s;
+    animation-direction: normal; 
+    animation-timing-function: ease-out;
+}
+
+@keyframes vanish {
+    0% {
+        opacity: 0.5;
+    }
+    
+    100% {
+        opacity: 0;
+    }
+
+}
+
+.show {
+    animation-name: reveal;
+    animation-duration: 1s;
+    animation-direction: normal; 
+    animation-timing-function: ease-out;
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0.5;
+    }
+    
+    100% {
+        opacity: 1.0;
+    }
+
+}
+
+
+.repo-nav-div {
+    display: none;
+    /* justify-content: center; */
+    align-items: center;
+    width: fit-content;
+    height: 48px;
+    border-bottom: 2px white solid;
+    transition: ease;
+    /* border: yellow 1px solid; */
+    margin-left: 30px;
+    font-size: 14px;
+}
+
+.repo-nav-div img {
+    height: 16px;
+}
+
+#repo-nav-div-1 {
+    /* display: flex; */
+    justify-content: space-around;
+    width: 99px;
+}
+
+#repo-nav-div-2 {
+    /* display: flex; */
+    justify-content: space-around;
+    width: 110.78px;
+}
+
+#repo-nav-div-3 {
+    /* display: flex; */
+    justify-content: space-around;
+    width:85px;
+}
+#repo-nav-div-4 {
+    /* display: flex; */
+    justify-content: space-around;
+    width: 92px;
+}
+.repo-nav-div:hover {
+    border-bottom: 2px #959da5 solid;
+}
+
+.repo-nav-div:active {
+    font-weight: 600;
+    border-bottom: 2px solid #f9826c;    
+}
+
+.repo-nav-div a {
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#repo-nav-div-1 {
+    margin-left: 20px;
+}
+
+#repo-count-display {
+    display: flex;
+    background-color: #f5f5f5;
+    width: 17%;
+    margin-left: 28%;
+    height: 1%;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+#nested-repo-count-display-div {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 99%;
+    font-weight: 500;
+    color: #6a737d;
+}
+
+#repo-search-div {
+    display: flex;
+    background-color: #f5f5f5;
+    width: 67%;
+    height: 2%;
+    margin-left: 28%;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+#nested-repo-search-div {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 99%;
+    position: absolute;
+}
+
+#repo-search {
+    height: 50%;
+    border-radius: 5px; 
+    width: 95%;   
+    border: solid 1px #e1e4e8;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#repo-search:focus{
+    outline: none;    
+}
+#hidden {
+    position: sticky;
+    top: 46.5px;
+    height: 0.003%;
+    width:100%;
+    background-color: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    z-index: 1;
+}
+
+#body-block-right {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 28%;
+    width: 67%;
+    height: fit-content;
+    /* border: 1px solid red; */
+}
+
+.nested-body-block-right {
+    display: flex;
+    border-bottom: 1px solid white;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    border-bottom: 1px solid #f5f5f5;
+    
+}
+
+.repo-description-div-2 {
+    display: flex;  
+    flex-direction: column;
+    align-items: flex-end;  
+    width: 30%;
+    /* border: 1px solid pink; */
+    height: 100%;
+    justify-content: center;
+}
+
+.repo-description-div-2 button {
+    width: 35px;
+    height: 24px;
+    background-color: white;
+    /* border: 1px solid black; */
+    border-radius: 6px;
+    font-size: 12px;
+    border: none;
+}
+
+.repo-description-div-2 img {
+    height: 26px;
+    width: 16px;
+}
+
+.nested-repo-description-div-2 {
+    display: flex;
+    justify-content: center;
+    height: 26px;
+    width: 60px;
+    margin-top: 10px;
+    border: 1px solid #6a737d; 
+    border-radius: 5px;   
+}
+
+
+
+.repo-description-div-3 {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 20px;
+    /* border: 1px solid black; */
+}
+
+#repo-description-div-1 {
+    /* border: 1px solid pink; */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+    justify-content: center;
+}
+
+#repo-description-div-1 a {
+    text-decoration: none;
+    color: #0366d6;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nested-repo-description {
+    display: flex;
+    width: fit-content;
+    height: fit-content;    
+    justify-content: space-between;
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#2f363d ;
+    
+
+}
+
+.repo-language-colour {
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    /* border: 1px solid limegreen; */
+}
+
+.repo-language {
+    display: flex;    
+    height: 17;
+    width: 55px;
+    margin-left: 0;
+    /* border: 1px solid orange; */
+    
+}
+
+#nested-repo-description-1 {
+    width: 72px;   
+    /* border: 1px solid blue;  */
+}
+
+.repo-star {
+    height: 17px;
+    width: 18px;
+    /* border: 1px solid black; */
+    
+}
+
+.repo-stars {
+    display: flex;    
+    height: 17px;
+    width: 16px;
+    /* border: 1px solid black; */
+    
+}
+
+#nested-repo-description-2 {
+    display: flex;
+    /* justify-content: space-around; */
+    width: 35px;   
+    /* border: 1px solid yellow; */
+}
+
+.repo-fork {
+    height: 17px;
+    width: 17px;
+    /* border: 1px solid brown;     */
+}
+
+.repo-forks {
+    display: flex;    
+    height: 17px;
+    width: 16px;
+    /* border: 1px solid red;     */
+}
+
+#nested-repo-description-3 {
+    width: 30px;
+    /* border:1px solid green; */
+}
+#nested-repo-description-4 {
+     width: 200px;
+     /* border:1px solid chartreuse; */
+}
+
+.repo-update {
+    display: flex;    
+    height: 17px;
+    font-size: 12px;
+    /* border: 1px solid pink; */
+    width: 200px;
+}
+
+#nested-repo-description-2,#nested-repo-description-3, #nested-repo-description-4 {
+    margin-left: 8px;
+}
+
+
+#body-block-left {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 28%;
+    height: 50%;
+    z-index: 1;
+    margin-top: 62.98px;
+    /* border: 1px solid; */
+    
+}
+
+
+#avatar {
+    width: 20vw;
+    height: 20vw;
+    
+    align-self: center;
+    margin-top: 15%;
+}
+
+#user-avatar {
+    /* margin-top: 15%; */
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    align-self: center;
+    z-index: 1;
+}
+
+#user-name {
+    width: 60%;
+    margin-top: 30px;
+    margin-left: 13%;
+    height: 2%;
+    font-size: 26px;
+    font-weight: 600;
+    
+
+}
+
+#user-login {
+    height: fit-content;
+    margin-left: 13%;
+    margin-top: 1vw;
+    width: fit-content;
+    height: fit-content;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    color: #586069;
+    
+}
+
+#user-bio {
+    width: fit-content;
+    margin-top: 40px;
+    margin-left: 13%;
+    height: fit-content;
+    
+}
+
+.no-display{
+    display: none;
+    
+}
+
+.error-message {
+    width: 100%;
+    height: 40%;
+    justify-self: center;
+    align-self: flex-start;
+    justify-content: center;
+    align-content: center;
+}
+
+.burger {
+    display: none;
+}
+
+.nested-burger {
+    height: 2px;
+    width: 20px;
+    background-color: white;
+    border-radius: 33%;
+}
+
+.main-sticky{
+    position: sticky;
+    margin-top: 0px;
+}
+
+@media (max-width: 765px) {
+
+        .burger {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 15px;
+            margin-left: 20px;
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 5px;
+            width: 95%;
+        }
+
+
+        #main-container {
+            display: flex;
+            flex-direction: column;            
+        }
+
+        #nav-block {
+            display: flex;
+            position: relative;
+            margin-top: 0;
+            height: 3%;
+        }
+
+        #body-block-left {
+            position: absolute;
+            width: 100%;
+            height: 9%;
+            margin-top: 70px;
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid black; */
+        }
+
+        #user-bio, #user-name, #user-avatar, #user-login {
+            /* border: 1px solid black; */
+            position: absolute;
+        }
+
+        #user-avatar {
+            margin-top: -10.6vw;
+            width: 15vw;
+            height: 15vw;  
+            margin-left: 10px;  
+        }
+
+        #user-name {
+            margin-left: 130px;
+        }
+        #user-login{
+            margin-left: 130px;
+            margin-top: 60px;
+        }
+        #user-bio{
+            margin-top: 150px;
+            margin-left: 10px;
+        }
+
+        #repo-nav {
+            position: absolute;
+            width: 100%;
+            margin-left: 0;
+            margin-top: 280px;
+            /* border: 1px solid black; */
+            height: 5vw;
+            display: flex;
+        }
+        #repo-search-div {
+            position: absolute;
+            width: 80%;
+            margin-left: 0;
+            margin-top: 285px;
+            align-self: center;
+        }
+
+        #body-block-right {
+            position: absolute;
+            width: 98.5%;
+            margin-top: 320px;  
+            /* border: 1px solid black; */
+            margin-left:10px;         
+        }
+
+        #repo-nav-left,  
+        #repo-count-display, #hidden, #header-div-2,  #header-div-4,
+        #header-div-5 {
+            display: none;
+        }
+
+        
+
+
+
+
+
+}
