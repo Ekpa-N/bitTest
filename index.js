@@ -83,7 +83,7 @@ const apiCall = async(theUser) => {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      authorization: "token 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"
+      authorization: "token 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"
     },
     body: JSON.stringify({
         query:  `
