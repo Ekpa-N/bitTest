@@ -1,4 +1,4 @@
-// Elements updated through id
+// Elements updated through id.
 const [searchUser, userAvatar, userName, userLogin, 
   userBio, repoNavImage, navLeftId, repoCount, 
   topNavDiv, searchUserDiv, header, bodyBlockRight, 
