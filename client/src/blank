@@ -1,0 +1,53 @@
+// store
+
+// import {configureStore} from '@reduxjs/toolkit'
+// import authReducer from '../slice/repoSlice'
+
+
+// export const store = configureStore({
+//     reducer: {
+//         repos: authReducer,
+//    
+
+
+// slice 
+
+// import {createSlice, createAsyncThunk} from '@reduxjs/toolkit'
+// import axios from 'axios'
+
+// const initialState = {
+//     repoData: null,
+//     isError: false,
+//     isSuccess: false,
+//     isLoading: false,
+//     message:'',
+// }
+
+// export const getRepos = createAsyncThunk('repos/getRepos', async (user, thunkAPI) => {
+//     try {
+//         return await axios.get('/login', user)
+//     } catch (error) {
+
+//     }
+// })
+
+// export const repoSlice = createSlice({
+//     name: 'repos',
+//     extraReducers: {
+//         [getRepos.pending]: (state, action) => {
+//             state.isLoading = true
+//         }
+//     },
+//         [getRepos.fulfilled]: (state, action) => {
+//             state.isLoading = false
+//             state.repoData = action.payload
+//         },
+//         [getPosts.rejected]: (state, action) => {
+//             state.isLoading = false
+//             state.message = action.payload
+//         }
+   
+// })
+
+// export const {reset} = authSlice.actions
+// export default repoSlice.reducer
